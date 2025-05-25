@@ -1,6 +1,14 @@
-# ZMK Module Template
+# ZMK Module: Corax Keyboard
 
-This repository contains a shield files for the [Corax Keyboard]() to allow users to build their own firmware.
+This repository contains shield files for the [Corax Keyboard](https://github.com/dnlbauer/corax-keyboard).
+It can be used to build the zmk firmware for the keyboard.
+
+**Example user config**: For a usage example, see my [Corax keyboard configuration](https://github.com/dnlbauer/corax-zmk-config)
+
+## Supported Keyboards:
+Supports the Corax56 and Corax54 keyboard variants.
+
+**Hardware**: [Corax Keyboard Repository](https://github.com/dnlbauer/corax-keyboard)
 
 ## Usage
 
