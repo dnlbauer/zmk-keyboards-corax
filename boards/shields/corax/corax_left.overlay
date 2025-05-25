@@ -1,5 +1,10 @@
 #include "corax.dtsi"
 
+&physical_layout0 {
+    kscan = <&kscan0>;
+    transform = <&default_transform>;
+};
+
 &kscan0 {
     diode-direction = "col2row";
 
