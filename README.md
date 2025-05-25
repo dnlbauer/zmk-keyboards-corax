@@ -1,10 +1,30 @@
 # ZMK Module Template
 
-This repository contains a template for a ZMK module, as it would most frequently be used. 
+This repository contains a shield files for the [Corax Keyboard]() to allow users to build their own firmware.
 
 ## Usage
 
-Read through the [ZMK Module Creation](https://zmk.dev/docs/development/module-creation) page for details on how to configure this template.
+Edit your west.yaml file found in your zmk config's config directory to add the corax module.
+
+Example:
+```yaml
+manifest:
+  remotes:
+    - name: dnlbauer
+      url-base: https://github.com/dnlbauer
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-keyboards-corax
+      remote: dnlbauer
+      revision: main
+  self:
+    path: config
+```
 
 ## More Info
 
