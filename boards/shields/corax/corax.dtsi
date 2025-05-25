@@ -1,4 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "corax-layouts.dtsi"
+
+&physical_layout0 {
+    transform = <&default_transform>;
+};
 
 / {
     chosen {
